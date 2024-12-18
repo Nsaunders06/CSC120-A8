@@ -47,9 +47,9 @@ public Fairy(Boolean isChildSleeping, Boolean isTooth, String note, String tooth
         if (this.isChildSleeping && this.isTooth == true){
             System.out.println("The tooth fairy has found the right room and the conditions are right to proceed with the program!");
         }
-        else{
-           System.out.println("The tooth fairy can't go here. Please try again with other conditions!"); 
-        }
+            else{
+                System.out.println("The tooth fairy can't go here. Please try again with other conditions!"); 
+            }
     }
 /**
  * Lets the fairy grab the note and tooth and add it to the inventory 
@@ -94,10 +94,10 @@ public Fairy(Boolean isChildSleeping, Boolean isTooth, String note, String tooth
             System.out.println("You are now at " + fairyLocationX + "," + fairyLocationY);
             return true;       
         }
-        else{
-            System.out.println("You cannot walk! Try something else");
-            return false;
-        }
+            else{
+                System.out.println("You cannot walk! Try something else");
+                return false;
+            }
     }
 /**
  * Lets the fairy fly if they have the capacity 
@@ -112,10 +112,10 @@ public Fairy(Boolean isChildSleeping, Boolean isTooth, String note, String tooth
             System.out.println("You are now at " + fairyLocationX + ", " + fairyLocationY);
             return true;       
         }
-        else{
-            System.out.println("You cannot fly! Try something else");
-            return false;
-        }
+            else{
+                System.out.println("You cannot fly! Try something else");
+                return false;
+                }
             
     }
 /**
