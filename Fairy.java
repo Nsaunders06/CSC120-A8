@@ -1,7 +1,7 @@
 
 import java.util.ArrayList; 
 
-public class fairyAdventure{
+public class Fairy{
 // Attributes 
     public boolean isChildSleeping; 
     public boolean isTooth; 
@@ -14,18 +14,19 @@ public class fairyAdventure{
     public boolean canWalk; 
     public int fairyHeight; 
 
-
-/**
- * Constructor for fairy adventure 
- * @param isChildSleeping
- * @param isTooth
- * @param note
- * @param toothLocation
- * @param fairyLocationX
- * @param fairyLocationY
- * @param fairyHeight
- */
-public fairyAdventure(Boolean isChildSleeping, Boolean isTooth, String note, String toothLocation, int fairyLocationX, int fairyLocationY, int fairyHeight, boolean canFly, boolean canWalk){
+ /**
+  * Constructor for Fairy
+  * @param isChildSleeping
+  * @param isTooth
+  * @param note
+  * @param toothLocation
+  * @param fairyLocationX
+  * @param fairyLocationY
+  * @param fairyHeight
+  * @param canFly
+  * @param canWalk
+  */
+public Fairy(Boolean isChildSleeping, Boolean isTooth, String note, String toothLocation, int fairyLocationX, int fairyLocationY, int fairyHeight, boolean canFly, boolean canWalk){
     this.isChildSleeping = isChildSleeping; 
     this.isTooth = isTooth; 
     this.note = note; 
@@ -162,7 +163,7 @@ public fairyAdventure(Boolean isChildSleeping, Boolean isTooth, String note, Str
  * @param args
  */
     public static void main(String[] args) {
-        fairyAdventure fairyOne = new fairyAdventure(true, true, "I really want a present", "under pillow", 0, 0, 0, true, true); 
+        Fairy fairyOne = new Fairy(true, true, "I really want a present", "under pillow", 0, 0, 0, true, true); 
         fairyOne.enterRoom();
         fairyOne.grab();
         fairyOne.examine();
